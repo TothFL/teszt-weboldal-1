@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Velvet Tips Manicure Studio</title>
+    <meta name="description" content="Explore our range of luxury nail services including gel polish, acrylic extensions, and hand-painted nail art.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .services-hero {
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/nails.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-list {
+            margin-top: -100px;
+            position: relative;
+            z-index: 10;
+        }
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--glass-border);
+        }
+        .price-item:last-child { border-bottom: none; }
+        .price-item h4 { font-size: 1.2rem; color: var(--text-main); }
+        .price-item .price-val { color: var(--accent); font-weight: 700; font-size: 1.2rem; }
+    </style>
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container nav-content">
+            <a href="index.html" class="logo">VELVET TIPS</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="services-hero">
+            <div class="container">
+                <h1 data-reveal>Our Menu</h1>
+                <p data-reveal class="subtitle">Tailored Beauty Treatments</p>
+            </div>
+        </section>
+
+        <section class="service-list container">
+            <div class="grid">
+                <div class="card" data-reveal>
+                    <span class="subtitle">Essential Care</span>
+                    <h3>Manicures</h3>
+                    <div class="price-item">
+                        <h4>Classic Manicure</h4>
+                        <span class="price-val">$30</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Gel Manicure</h4>
+                        <span class="price-val">$45</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Russian Manicure</h4>
+                        <span class="price-val">$60</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Acrylic Full Set</h4>
+                        <span class="price-val">$75</span>
+                    </div>
+                </div>
+
+                <div class="card" data-reveal>
+                    <span class="subtitle">Art & Design</span>
+                    <h3>Nail Art</h3>
+                    <div class="price-item">
+                        <h4>Minimalist Art</h4>
+                        <span class="price-val">$15+</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Custom Hand-Painted</h4>
+                        <span class="price-val">$25+</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>French Tips</h4>
+                        <span class="price-val">$10</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Chrome/Holographic</h4>
+                        <span class="price-val">$15</span>
+                    </div>
+                </div>
+
+                <div class="card" data-reveal>
+                    <span class="subtitle">Spa Experience</span>
+                    <h3>Pedicures</h3>
+                    <div class="price-item">
+                        <h4>Classic Pedicure</h4>
+                        <span class="price-val">$40</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Deluxe Spa Pedi</h4>
+                        <span class="price-val">$65</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Paraffin Wax Treatment</h4>
+                        <span class="price-val">$20</span>
+                    </div>
+                    <div class="price-item">
+                        <h4>Foot Massage (20m)</h4>
+                        <span class="price-val">$30</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="text-align: center; padding-top: 50px;">
+            <div data-reveal>
+                <h2>Ready for a Transformation?</h2>
+                <p style="color: var(--text-muted); margin: 20px 0 40px;">Book your appointment today and experience the difference.</p>
+                <a href="contact.html" class="btn btn-primary">Schedule Now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Velvet Tips Manicure Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
