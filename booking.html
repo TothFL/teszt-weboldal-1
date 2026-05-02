@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now | Velvet Tips Manicure Studio</title>
+    <meta name="description" content="Schedule your luxury manicure or pedicure at Velvet Tips. Real-time availability via our Google Calendar integration.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header id="main-header" class="scrolled">
+        <div class="container">
+            <nav>
+                <div class="nav-content">
+                    <a href="index.html" class="logo">VELVET TIPS</a>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="booking.html" class="active">Booking</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a href="booking.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem; font-size: 0.75rem;">Book Now</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="booking-hero container" style="padding-top: 150px;">
+            <div class="section-header" data-reveal>
+                <span class="subtitle">Reserve Your Moment</span>
+                <h1>Live Scheduling</h1>
+                <p style="color: var(--text-muted); margin-top: 1rem;">Select a service and find a time that works for you. Our calendar is synced in real-time.</p>
+            </div>
+
+            <div class="booking-grid" data-reveal>
+                <div class="booking-info">
+                    <div class="card" style="margin-bottom: 2rem;">
+                        <h3>How it works</h3>
+                        <ul style="list-style: none; color: var(--text-muted); padding-top: 1rem;">
+                            <li style="margin-bottom: 1rem;">✨ <strong>Select</strong> your preferred date and time from the calendar.</li>
+                            <li style="margin-bottom: 1rem;">📝 <strong>Fill</strong> in your details and the service you'd like.</li>
+                            <li style="margin-bottom: 1rem;">✅ <strong>Confirm</strong> your booking. You'll receive a calendar invite instantly.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Booking Policy</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Please arrive 5 minutes before your scheduled time. Cancellations must be made at least 24 hours in advance.</p>
+                    </div>
+                </div>
+
+                <div class="calendar-container">
+                    <!-- Google Calendar Appointment Schedule Embed Placeholder -->
+                    <!-- Note: In a real scenario, the user would replace this URL with their Google Calendar Appointment Schedule link -->
+                    <iframe src="https://calendar.google.com/calendar/embed?src=en.usa%23holiday%40group.v.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    
+                    <div style="position: absolute; bottom: 20px; right: 20px; background: var(--surface); padding: 10px 20px; border-radius: 10px; border: 1px solid var(--glass-border); font-size: 0.8rem; color: var(--accent);">
+                        ● Live Availability
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Velvet Tips Manicure Studio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,13 +1,16 @@
-// Navbar Scroll Effect
-const navbar = document.getElementById('navbar');
+// Header Scroll Effect
+const header = document.querySelector('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
+        header.classList.add('scrolled');
     } else {
-        // Only remove if we're not on a page that forced it (like services/contact)
-        const isForced = document.querySelector('nav').dataset.forceScrolled === 'true';
-        if (!isForced && !window.location.pathname.includes('services.html') && !window.location.pathname.includes('contact.html')) {
-            navbar.classList.remove('scrolled');
+        // Keep scrolled on specific pages that need it for visibility
+        const isBooking = window.location.pathname.includes('booking.html');
+        const isServices = window.location.pathname.includes('services.html');
+        const isContact = window.location.pathname.includes('contact.html');
+        
+        if (!isBooking && !isServices && !isContact) {
+            header.classList.remove('scrolled');
         }
     }
 });
